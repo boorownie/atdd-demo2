@@ -32,11 +32,6 @@ class ProductIntegrationTest {
         }
     }
 
-    @BeforeAll
-    fun setup() {
-        productRepository.save(Product(name = "Apple", price = 1000))
-    }
-
     @Test
     fun `B 애플리케이션에서 상품 조회`() {
         // given
